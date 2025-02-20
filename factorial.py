@@ -1,3 +1,27 @@
+import time
+print()
+while True:
+    fac_list = [1]
+    fac_number = 1
+    try:
+        while True :
+            factorial_number = int(input(" Enter the number for the Factorial to execute > "))
+            if factorial_number !="":
+                break
+
+
+        for fac in range(factorial_number,1,-1):
+            fac_list.append(fac)
+            fac_number*=fac
+
+        sorted(fac_list)
+        print()
+        print("   Breaking down of factorial list below")
+        print()
+        print(" " , sorted(fac_list),end="")
+        print()
+        print()
+        print(f" Result for {factorial_number}! (factorial) = {fac_number}")
         print()
     except ValueError:
         print()
@@ -18,4 +42,3 @@ for gtb in ("    factorial calculator is being terminated "):
 print()
 print()
 press2 = str(input("      press ENTER to EXIT"))
-
